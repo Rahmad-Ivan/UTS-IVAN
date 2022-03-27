@@ -1,0 +1,18 @@
+ind = 0
+ipa = 0
+mtk = 0
+stts = ""
+print('Program penentuan status kelulusan ujian mahasiswa\n')
+ind = input("Masukkan nilai Bhs Indonesia : ")
+ipa = input("Masukkan nilai IPA : ")
+mtk = input("Masukkan nilai Matematika : ")
+
+if ind >= 60 and ipa >= 60 and mtk >= 60:
+    if mtk >= 70:
+        stts = "LULUS"
+    else :
+        stts = "TIDAK LULUS"
+else:
+  stts = "TIDAK LULUS"
+
+print('Status Kelulusan : '+ stts)
